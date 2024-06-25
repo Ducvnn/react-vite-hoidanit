@@ -2,15 +2,8 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
-
-// arrow function === bien name = () => {}
-// component === html + css + js (Dat ten component quy tac viet hoa chu cai dau)
-
-const MyComponent = () => {
-  return (
-    <div> eric & hoi dan it update </div>
-  );
-}
+import MyComponent from './component/learn/MyComponent'
+import { SecondComponent, ThirdComponent, FourComponent } from './component/learn/SecondComponent'
 
 
 const App = () => {
@@ -27,7 +20,10 @@ const App = () => {
         </a>
       </div>
       <h1>Hello world & hoidanit </h1>
-      <MyComponent/>
+      <MyComponent />
+      <SecondComponent />
+      <ThirdComponent />
+      <FourComponent />
       <div className="card">
         <button onClick={() => setCount((count) => count + 1)}>
           count is {count}
