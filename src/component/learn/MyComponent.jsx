@@ -1,17 +1,24 @@
-// arrow function === bien name = () => {}
-// component === html + css + js ( Dat ten component quy tac viet hoa chu cai dau )
 
-// JSX: chi dung 1 parent
-// fragment === <> </> ( khong render nhieu html )
-
-
+// suc manh cua dau {{}} == dau ben ngoai tuong trung cho dung js trong html. dau ben trong la opject
 
 import './style.css';
 
 const MyComponent = () => {
+  // const hoidanit = `eric`; //string (hay dung)
+  // const hoidanit = 25; //number (hay dung)
+  // const hoidanit = true; //bolean (ko y nghia)
+  // const hoidanit = undefined; //(ko y nghia)
+  // const hoidanit = null; //(ko y nghia)
+  const hoidanit = [1, 2, 3]
+  // const hoidanit = {
+  //   name: `hoidanit`,
+  //   age: `25`
+  // }
+
   return (
     <>
-      <div> eric & hoi dan it update </div>
+      <div> {JSON.stringify(hoidanit)} & hoi dan it update </div>
+      <div>{console.log(`ERIC`)}</div> 
       <div className="child"
           style={
             { boderRadius: "10px" }
