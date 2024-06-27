@@ -5,17 +5,24 @@ import reactLogo from './assets/react.svg';
 
 
 const App = () => {
-  const hoidanit = "eric";
+  const hoidanit = "eric asenal";
   const age = 25;
   const data = {
     address: "hanoi",
     country: "vietnam"
   }
   
+  const addNewTodo = () => {
+    alert(`call me`)
+  }
+  
+  addNewTodo()
   return (
     <div className="todo-container">
       <div className="todo-title"> TODO LIST </div>
-      <TodoNew />
+      <TodoNew
+      addNewTodo={addNewTodo}
+      />
       <TodoData 
         name={hoidanit}
         age={age}
