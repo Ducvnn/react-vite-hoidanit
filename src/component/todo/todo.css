@@ -10,6 +10,7 @@
   color: orange;
   text-align: center;
   font-weight: 600;
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   
 }
 
@@ -66,4 +67,5 @@
   to {
       transform: rotate(360deg);
   }
+  
 }

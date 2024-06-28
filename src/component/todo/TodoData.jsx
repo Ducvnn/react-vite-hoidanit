@@ -15,11 +15,14 @@ const TodoData = (props) => {
 
   const {name, age, data} = props; // cu phap destructuring object
   console.log(`>>>check props`, props)
+  
   return (
     <div className='todo-data'>
+      
       <dive> My name is {props.name} </dive>
       <div> Learning React </div>
       <div> Watching Youtoube </div>
+      
       <div>
         {JSON.stringify(props.todoList)}
       </div>
