@@ -1,33 +1,22 @@
-
-//{key:value}
-//props la mot bien object {}
-// vd {
-//   name: "eric",
-//   age: 25,
-//   data: {}
-// }
-
 const TodoData = (props) => {
-  
-// const name = props.name;
-// const age = props.age;
-// const data = props.data;
-
-  const {name, age, data} = props; // cu phap destructuring object
-  console.log(`>>>check props`, props)
-  
+  const {todoList } = props;
+  console.log(`>>> check props:`, todoList)
   return (
     <div className='todo-data'>
-      
-      <dive> My name is {props.name} </dive>
-      <div> Learning React </div>
-      <div> Watching Youtoube </div>
+      {todoList.map((item, index) => {
+        console.log(`>>> check map:`, item, index)
+        return (
+          <div className="todo-item">
+            <div> {item.name}</div>
+            <button>Delete</button>
+          </div>)
+      })}
       
       <div>
         {JSON.stringify(props.todoList)}
       </div>
 
-      </div>
+    </div>
   )
 }
 
