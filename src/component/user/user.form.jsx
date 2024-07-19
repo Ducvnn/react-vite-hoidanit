@@ -7,10 +7,10 @@ import { createUserAPI } from "../../services/api.service";
 const UserForm = (props) => {
   const {loadUser} = props;
   const [fullName, setFullName] = useState("");
-  const [email, setEmail] = useState("")
-  const [password, setPassword] = useState("")
-  const [phone, setPhone] = useState("")
-  const [isModalOpen, setIsModalOpen] = useState(false)
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+  const [phone, setPhone] = useState("");
+  const [isModalOpen, setIsModalOpen] = useState(false);
   
   const handleSubmitBtn = async () => {
 
