@@ -40,6 +40,7 @@ const UserTable = (props) => {
       dataIndex: 'fullName',
       
     },
+    
     {
       title: 'Email',
       dataIndex: 'email',
