@@ -97,9 +97,6 @@ const UserForm = (props) => {
           </div>
 
         </div>
-
-      
-
       </Modal>
     
     </div>
