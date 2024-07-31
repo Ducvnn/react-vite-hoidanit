@@ -53,7 +53,7 @@ const ViewUserDetail = (props) => {
         else {
           notification.error({
             message: "error update Avatar",
-            description: JSON.stringify(resUpload.message)
+            description: JSON.stringify(resUpdateAvatar.message)
         })
         }
 
@@ -99,7 +99,7 @@ const ViewUserDetail = (props) => {
               marginTop: "10PX",
               height: "110px",
               width: "110px",
-              border: "1px solid #ccc"
+              
             }}>
               <img style={{height: "100%", width: "100%", objectFit: "contain"}}
                 src={`${import.meta.env.VITE_BACKEND_URL}/images/avatar/${dataDetail.avatar}`}/>

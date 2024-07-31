@@ -5,6 +5,7 @@ import { useState } from 'react';
 import ViewUserDetail from './view.user.detail';
 import { deleteUserAPI } from '../../services/api.service';
 import { notification, Popconfirm } from 'antd';
+import { renderMatches } from 'react-router-dom';
 
 
 const UserTable = (props) => {
@@ -18,6 +19,17 @@ const UserTable = (props) => {
   const [isDetailOpen, setIsDetailOpen] = useState(false);
 
   const columns = [
+
+    {
+      title: 'STT',
+      render: (_, record, index) => {
+        console.log(`>>>check index`, index)
+        return (
+         <>{index + 1}</>
+        )
+      },
+    },
+
     {
       title: 'Id', 
       dataIndex: '_id',
